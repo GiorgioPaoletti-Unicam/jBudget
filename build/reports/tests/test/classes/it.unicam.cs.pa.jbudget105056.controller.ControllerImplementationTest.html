@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - ControllerImplementationTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>ControllerImplementationTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/it.unicam.cs.pa.jbudget105056.controller.html">it.unicam.cs.pa.jbudget105056.controller</a> &gt; ControllerImplementationTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">3</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">1.206s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard error</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">createScheduleTransaction()</td>
+<td class="success">0.197s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">createTransaction()</td>
+<td class="success">0.085s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">generateReportBudget()</td>
+<td class="success">0.924s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard error</h2>
+<span class="code">
+<pre>lug 16, 2020 11:48:45 AM it.unicam.cs.pa.jbudget105056.controller.LoggerManagerImplementation setMessage
+INFO: Account Aggiunto: Account {ID: 1326890527, name: Cassa, description: Portafoglio Personale, opening: 30.5, type: ASSETS, movements:  }
+
+lug 16, 2020 11:48:45 AM it.unicam.cs.pa.jbudget105056.controller.LoggerManagerImplementation setMessage
+INFO: Account Aggiunto: Account {ID: 559058207, name: Conto Bancario, description: Conto Bancario, opening: 2489.78, type: ASSETS, movements:  }
+
+lug 16, 2020 11:48:45 AM it.unicam.cs.pa.jbudget105056.controller.LoggerManagerImplementation setMessage
+INFO: Account Aggiunto: Account {ID: -705401879, name: Carta di Debito, description: Carta di debito, opening: 0.0, type: LIABILITIES, movements:  }
+
+lug 16, 2020 11:48:45 AM it.unicam.cs.pa.jbudget105056.controller.LoggerManagerImplementation setMessage
+INFO: Tag Aggiunto: Tag { ID: -1158587444, name: Shopping, description: Abbigliamento &amp; Scarpe }
+
+lug 16, 2020 11:48:45 AM it.unicam.cs.pa.jbudget105056.controller.LoggerManagerImplementation setMessage
+INFO: Tag Aggiunto: Tag { ID: 1371686698, name: Cibo &amp; Bevande, description: Generi alimentari }
+
+lug 16, 2020 11:48:45 AM it.unicam.cs.pa.jbudget105056.controller.LoggerManagerImplementation setMessage
+INFO: Tag Aggiunto: Tag { ID: 588683109, name: Spese Fianaziarie, description: Prelievo }
+
+lug 16, 2020 11:48:45 AM it.unicam.cs.pa.jbudget105056.controller.LoggerManagerImplementation setMessage
+INFO: Budget Aggiunto: Tag { ID: -1158587444, name: Shopping, description: Abbigliamento &amp; Scarpe }: 200.0
+
+lug 16, 2020 11:48:45 AM it.unicam.cs.pa.jbudget105056.controller.LoggerManagerImplementation setMessage
+INFO: Budget Aggiunto: Tag { ID: 1371686698, name: Cibo &amp; Bevande, description: Generi alimentari }: 40.0
+
+lug 16, 2020 11:48:45 AM it.unicam.cs.pa.jbudget105056.controller.LoggerManagerImplementation setMessage
+INFO: Budget Aggiunto: Tag { ID: 588683109, name: Spese Fianaziarie, description: Prelievo }: 2500.0
+
+lug 16, 2020 11:48:45 AM it.unicam.cs.pa.jbudget105056.controller.LoggerManagerImplementation setMessage
+INFO: Transazione Aggiunta: Transaction {ID: -1683045869, tags: [Tag { ID: 1371686698, name: Cibo &amp; Bevande, description: Generi alimentari }], date: Thu Jul 16 11:48:45 CEST 2020, movements: Movement { ID: 1539330499, description: 'Pizza con Amici, amount: 10.56, accountID: 1326890527, type: DEBIT, transactionID: -1683045869 }
+ }
+
+lug 16, 2020 11:48:45 AM it.unicam.cs.pa.jbudget105056.controller.LoggerManagerImplementation setMessage
+INFO: Trasferimento Aggiunto: Transaction {ID: 1671836616, tags: [Tag { ID: 588683109, name: Spese Fianaziarie, description: Prelievo }], date: Mon Oct 13 00:00:00 CEST 2025, movements: Movement { ID: 528240808, description: 'Prelievo, amount: 400.0, accountID: 1326890527, type: CREDITS, transactionID: 1671836616 }
+Movement { ID: -1153454854, description: 'Prelievo, amount: 400.0, accountID: 559058207, type: DEBIT, transactionID: 1671836616 }
+Movement { ID: -1153455253, description: 'Prelievo, amount: 1.5, accountID: 559058207, type: DEBIT, transactionID: 1671836616 }
+ }
+
+lug 16, 2020 11:48:45 AM it.unicam.cs.pa.jbudget105056.controller.LoggerManagerImplementation setMessage
+INFO: Transazione Aggiunta: Transaction {ID: 716430416, tags: [Tag { ID: 1371686698, name: Cibo &amp; Bevande, description: Generi alimentari }], date: Wed Oct 15 00:00:00 CEST 2025, movements: Movement { ID: -1730313974, description: 'CenaCracco, amount: 300.0, accountID: 1326890527, type: DEBIT, transactionID: 716430416 }
+ }
+
+lug 16, 2020 11:48:45 AM it.unicam.cs.pa.jbudget105056.controller.LoggerManagerImplementation setMessage
+INFO: Account Aggiunto: Account {ID: 1326890527, name: Cassa, description: Portafoglio Personale, opening: 30.5, type: ASSETS, movements:  }
+
+lug 16, 2020 11:48:45 AM it.unicam.cs.pa.jbudget105056.controller.LoggerManagerImplementation setMessage
+INFO: Account Aggiunto: Account {ID: 559058207, name: Conto Bancario, description: Conto Bancario, opening: 2489.78, type: ASSETS, movements:  }
+
+lug 16, 2020 11:48:45 AM it.unicam.cs.pa.jbudget105056.controller.LoggerManagerImplementation setMessage
+INFO: Account Aggiunto: Account {ID: -705401879, name: Carta di Debito, description: Carta di debito, opening: 0.0, type: LIABILITIES, movements:  }
+
+lug 16, 2020 11:48:45 AM it.unicam.cs.pa.jbudget105056.controller.LoggerManagerImplementation setMessage
+INFO: Tag Aggiunto: Tag { ID: -1158587444, name: Shopping, description: Abbigliamento &amp; Scarpe }
+
+lug 16, 2020 11:48:45 AM it.unicam.cs.pa.jbudget105056.controller.LoggerManagerImplementation setMessage
+INFO: Tag Aggiunto: Tag { ID: 1371686698, name: Cibo &amp; Bevande, description: Generi alimentari }
+
+lug 16, 2020 11:48:45 AM it.unicam.cs.pa.jbudget105056.controller.LoggerManagerImplementation setMessage
+INFO: Tag Aggiunto: Tag { ID: 588683109, name: Spese Fianaziarie, description: Prelievo }
+
+lug 16, 2020 11:48:45 AM it.unicam.cs.pa.jbudget105056.controller.LoggerManagerImplementation setMessage
+INFO: Budget Aggiunto: Tag { ID: -1158587444, name: Shopping, description: Abbigliamento &amp; Scarpe }: 200.0
+
+lug 16, 2020 11:48:45 AM it.unicam.cs.pa.jbudget105056.controller.LoggerManagerImplementation setMessage
+INFO: Budget Aggiunto: Tag { ID: 1371686698, name: Cibo &amp; Bevande, description: Generi alimentari }: 40.0
+
+lug 16, 2020 11:48:45 AM it.unicam.cs.pa.jbudget105056.controller.LoggerManagerImplementation setMessage
+INFO: Budget Aggiunto: Tag { ID: 588683109, name: Spese Fianaziarie, description: Prelievo }: 2500.0
+
+lug 16, 2020 11:48:45 AM it.unicam.cs.pa.jbudget105056.controller.LoggerManagerImplementation setMessage
+INFO: Transazione Aggiunta: Transaction {ID: -1683045869, tags: [Tag { ID: 1371686698, name: Cibo &amp; Bevande, description: Generi alimentari }], date: Thu Jul 16 11:48:45 CEST 2020, movements: Movement { ID: 1539330499, description: 'Pizza con Amici, amount: 10.56, accountID: 1326890527, type: DEBIT, transactionID: -1683045869 }
+ }
+
+lug 16, 2020 11:48:45 AM it.unicam.cs.pa.jbudget105056.controller.LoggerManagerImplementation setMessage
+INFO: Trasferimento Aggiunto: Transaction {ID: 1671836616, tags: [Tag { ID: 588683109, name: Spese Fianaziarie, description: Prelievo }], date: Mon Oct 13 00:00:00 CEST 2025, movements: Movement { ID: 528240808, description: 'Prelievo, amount: 400.0, accountID: 1326890527, type: CREDITS, transactionID: 1671836616 }
+Movement { ID: -1153454854, description: 'Prelievo, amount: 400.0, accountID: 559058207, type: DEBIT, transactionID: 1671836616 }
+Movement { ID: -1153455253, description: 'Prelievo, amount: 1.5, accountID: 559058207, type: DEBIT, transactionID: 1671836616 }
+ }
+
+lug 16, 2020 11:48:45 AM it.unicam.cs.pa.jbudget105056.controller.LoggerManagerImplementation setMessage
+INFO: Transazione Aggiunta: Transaction {ID: 716430416, tags: [Tag { ID: 1371686698, name: Cibo &amp; Bevande, description: Generi alimentari }], date: Wed Oct 15 00:00:00 CEST 2025, movements: Movement { ID: -1730313974, description: 'CenaCracco, amount: 300.0, accountID: 1326890527, type: DEBIT, transactionID: 716430416 }
+ }
+
+lug 16, 2020 11:48:46 AM it.unicam.cs.pa.jbudget105056.controller.LoggerManagerImplementation setMessage
+INFO: Account Aggiunto: Account {ID: 1326890527, name: Cassa, description: Portafoglio Personale, opening: 30.5, type: ASSETS, movements:  }
+
+lug 16, 2020 11:48:46 AM it.unicam.cs.pa.jbudget105056.controller.LoggerManagerImplementation setMessage
+INFO: Account Aggiunto: Account {ID: 559058207, name: Conto Bancario, description: Conto Bancario, opening: 2489.78, type: ASSETS, movements:  }
+
+lug 16, 2020 11:48:46 AM it.unicam.cs.pa.jbudget105056.controller.LoggerManagerImplementation setMessage
+INFO: Account Aggiunto: Account {ID: -705401879, name: Carta di Debito, description: Carta di debito, opening: 0.0, type: LIABILITIES, movements:  }
+
+lug 16, 2020 11:48:46 AM it.unicam.cs.pa.jbudget105056.controller.LoggerManagerImplementation setMessage
+INFO: Tag Aggiunto: Tag { ID: -1158587444, name: Shopping, description: Abbigliamento &amp; Scarpe }
+
+lug 16, 2020 11:48:46 AM it.unicam.cs.pa.jbudget105056.controller.LoggerManagerImplementation setMessage
+INFO: Tag Aggiunto: Tag { ID: 1371686698, name: Cibo &amp; Bevande, description: Generi alimentari }
+
+lug 16, 2020 11:48:46 AM it.unicam.cs.pa.jbudget105056.controller.LoggerManagerImplementation setMessage
+INFO: Tag Aggiunto: Tag { ID: 588683109, name: Spese Fianaziarie, description: Prelievo }
+
+lug 16, 2020 11:48:46 AM it.unicam.cs.pa.jbudget105056.controller.LoggerManagerImplementation setMessage
+INFO: Budget Aggiunto: Tag { ID: -1158587444, name: Shopping, description: Abbigliamento &amp; Scarpe }: 200.0
+
+lug 16, 2020 11:48:46 AM it.unicam.cs.pa.jbudget105056.controller.LoggerManagerImplementation setMessage
+INFO: Budget Aggiunto: Tag { ID: 1371686698, name: Cibo &amp; Bevande, description: Generi alimentari }: 40.0
+
+lug 16, 2020 11:48:46 AM it.unicam.cs.pa.jbudget105056.controller.LoggerManagerImplementation setMessage
+INFO: Budget Aggiunto: Tag { ID: 588683109, name: Spese Fianaziarie, description: Prelievo }: 2500.0
+
+lug 16, 2020 11:48:46 AM it.unicam.cs.pa.jbudget105056.controller.LoggerManagerImplementation setMessage
+INFO: Transazione Programmata Aggiunta: it.unicam.cs.pa.jbudget105056.model.ScheduledTransactionImplementation@eac5e545
+
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 6.3</a> at 16 lug 2020, 11:48:46</p>
+</div>
+</div>
+</body>
+</html>

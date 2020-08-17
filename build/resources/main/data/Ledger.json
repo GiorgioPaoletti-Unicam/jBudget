@@ -1,0 +1,665 @@
+{
+  "accounts": [
+    {
+      "ID": 1326890527,
+      "name": "Cassa",
+      "description": "Portafoglio Personale",
+      "opening": 150.0,
+      "type": "ASSETS",
+      "movements": [
+        {
+          "ID": 1539330499,
+          "description": "Pizza con Amici",
+          "amount": 10.5,
+          "type": "DEBIT"
+        },
+        {
+          "ID": 312757852,
+          "description": "Regalo Nonna",
+          "amount": 50.0,
+          "type": "CREDITS"
+        },
+        {
+          "ID": 528240608,
+          "description": "Prelievo",
+          "amount": 200.0,
+          "type": "CREDITS"
+        },
+        {
+          "ID": 137291034,
+          "description": "Kebab",
+          "amount": 5.7,
+          "type": "DEBIT"
+        }
+      ]
+    },
+    {
+      "ID": 839305604,
+      "name": "Conto Bancario",
+      "description": "Conto Bancario Personale",
+      "opening": 2500.0,
+      "type": "ASSETS",
+      "movements": [
+        {
+          "ID": 61044527,
+          "description": "Stipendio",
+          "amount": 1500.0,
+          "type": "CREDITS"
+        },
+        {
+          "ID": -1153455054,
+          "description": "Prelievo",
+          "amount": 200.0,
+          "type": "DEBIT"
+        },
+        {
+          "ID": -1153455253,
+          "description": "Prelievo",
+          "amount": 1.5,
+          "type": "DEBIT"
+        },
+        {
+          "ID": 1712962871,
+          "description": "Verniciatura Macchina",
+          "amount": 400.0,
+          "type": "DEBIT"
+        }
+      ]
+    },
+    {
+      "ID": -1621534711,
+      "name": "Carta di Debito",
+      "description": "Carta di Debito",
+      "opening": 0.0,
+      "type": "LIABILITIES",
+      "movements": [
+        {
+          "ID": -73127899,
+          "description": "Pantaloni nuovi",
+          "amount": 22.99,
+          "type": "DEBIT"
+        }
+      ]
+    }
+  ],
+  "transactions": [
+    {
+      "ID": 1239124307,
+      "tags": [
+        {
+          "ID": 761085632,
+          "name": "Fast-food",
+          "description": "Ristorazione"
+        }
+      ],
+      "date": "Jul 9, 2020, 8:30:00 PM",
+      "movements": [
+        {
+          "ID": 1539330499,
+          "description": "Pizza con Amici",
+          "amount": 10.5,
+          "type": "DEBIT"
+        }
+      ]
+    },
+    {
+      "ID": 933356758,
+      "tags": [
+        {
+          "ID": 1232768792,
+          "name": "Vestiario",
+          "description": "Shopping"
+        }
+      ],
+      "date": "May 6, 2020, 3:40:00 PM",
+      "movements": [
+        {
+          "ID": -73127899,
+          "description": "Pantaloni nuovi",
+          "amount": 22.99,
+          "type": "DEBIT"
+        }
+      ]
+    },
+    {
+      "ID": -264421855,
+      "tags": [
+        {
+          "ID": 589400924,
+          "name": "Regalo",
+          "description": "Ragalo"
+        }
+      ],
+      "date": "Jul 11, 2020, 12:00:00 PM",
+      "movements": [
+        {
+          "ID": 312757852,
+          "description": "Regalo Nonna",
+          "amount": 50.0,
+          "type": "CREDITS"
+        }
+      ]
+    },
+    {
+      "ID": 130075153,
+      "tags": [
+        {
+          "ID": 923820466,
+          "name": "Stipendio",
+          "description": "Stipendio"
+        }
+      ],
+      "date": "Jul 1, 2020, 1:00:00 PM",
+      "movements": [
+        {
+          "ID": 61044527,
+          "description": "Stipendio",
+          "amount": 1500.0,
+          "type": "CREDITS"
+        }
+      ]
+    },
+    {
+      "ID": 2024275626,
+      "tags": [
+        {
+          "ID": 332526956,
+          "name": "Prelievo",
+          "description": "Spese Finanziarie"
+        }
+      ],
+      "date": "Jul 12, 2020, 5:34:00 PM",
+      "movements": [
+        {
+          "ID": 528240608,
+          "description": "Prelievo",
+          "amount": 200.0,
+          "type": "CREDITS"
+        },
+        {
+          "ID": -1153455054,
+          "description": "Prelievo",
+          "amount": 200.0,
+          "type": "DEBIT"
+        },
+        {
+          "ID": -1153455253,
+          "description": "Prelievo",
+          "amount": 1.5,
+          "type": "DEBIT"
+        }
+      ]
+    },
+    {
+      "ID": 1387907805,
+      "tags": [
+        {
+          "ID": 1521131158,
+          "name": "Macchina",
+          "description": "Spese Macchina"
+        }
+      ],
+      "date": "Jul 16, 2020, 6:00:00 PM",
+      "movements": [
+        {
+          "ID": 1712962871,
+          "description": "Verniciatura Macchina",
+          "amount": 400.0,
+          "type": "DEBIT"
+        }
+      ]
+    },
+    {
+      "ID": 1563272874,
+      "tags": [
+        {
+          "ID": 761085632,
+          "name": "Fast-food",
+          "description": "Ristorazione"
+        }
+      ],
+      "date": "Jul 8, 2020, 1:00:00 PM",
+      "movements": [
+        {
+          "ID": 137291034,
+          "description": "Kebab",
+          "amount": 5.7,
+          "type": "DEBIT"
+        }
+      ]
+    }
+  ],
+  "tags": [
+    {
+      "ID": -2104133154,
+      "name": "Scarpe",
+      "description": "Shopping"
+    },
+    {
+      "ID": 761085632,
+      "name": "Fast-food",
+      "description": "Ristorazione"
+    },
+    {
+      "ID": 589400924,
+      "name": "Regalo",
+      "description": "Ragalo"
+    },
+    {
+      "ID": 332526956,
+      "name": "Prelievo",
+      "description": "Spese Finanziarie"
+    },
+    {
+      "ID": 1521131158,
+      "name": "Macchina",
+      "description": "Spese Macchina"
+    },
+    {
+      "ID": 1232768792,
+      "name": "Vestiario",
+      "description": "Shopping"
+    },
+    {
+      "ID": 923820466,
+      "name": "Stipendio",
+      "description": "Stipendio"
+    }
+  ],
+  "scheduledTransactions": [
+    {
+      "ID": -873267062,
+      "description": "Iphone Nuovo",
+      "accountID": 839305604,
+      "transactions": [
+        {
+          "ID": -540771175,
+          "tags": [
+            {
+              "ID": 2087281550,
+              "name": "Scheduled Transaction",
+              "description": "Transazione Programmata"
+            }
+          ],
+          "date": "Jul 18, 2020, 12:00:00 AM",
+          "movements": [
+            {
+              "ID": 794441852,
+              "description": "Iphone Nuovo Numero: 1",
+              "amount": 59.999,
+              "type": "DEBIT"
+            }
+          ]
+        },
+        {
+          "ID": -1155491182,
+          "tags": [
+            {
+              "ID": 2087281550,
+              "name": "Scheduled Transaction",
+              "description": "Transazione Programmata"
+            }
+          ],
+          "date": "Aug 17, 2020, 12:00:00 AM",
+          "movements": [
+            {
+              "ID": 794441853,
+              "description": "Iphone Nuovo Numero: 2",
+              "amount": 59.999,
+              "type": "DEBIT"
+            }
+          ]
+        },
+        {
+          "ID": -1388693071,
+          "tags": [
+            {
+              "ID": 2087281550,
+              "name": "Scheduled Transaction",
+              "description": "Transazione Programmata"
+            }
+          ],
+          "date": "Oct 16, 2020, 12:00:00 AM",
+          "movements": [
+            {
+              "ID": 794441854,
+              "description": "Iphone Nuovo Numero: 3",
+              "amount": 59.999,
+              "type": "DEBIT"
+            }
+          ]
+        },
+        {
+          "ID": -1942367946,
+          "tags": [
+            {
+              "ID": 2087281550,
+              "name": "Scheduled Transaction",
+              "description": "Transazione Programmata"
+            }
+          ],
+          "date": "Jan 14, 2021, 12:00:00 AM",
+          "movements": [
+            {
+              "ID": 794441855,
+              "description": "Iphone Nuovo Numero: 4",
+              "amount": 59.999,
+              "type": "DEBIT"
+            }
+          ]
+        },
+        {
+          "ID": 1351275385,
+          "tags": [
+            {
+              "ID": 2087281550,
+              "name": "Scheduled Transaction",
+              "description": "Transazione Programmata"
+            }
+          ],
+          "date": "May 14, 2021, 12:00:00 AM",
+          "movements": [
+            {
+              "ID": 794441856,
+              "description": "Iphone Nuovo Numero: 5",
+              "amount": 59.999,
+              "type": "DEBIT"
+            }
+          ]
+        },
+        {
+          "ID": -1805482234,
+          "tags": [
+            {
+              "ID": 2087281550,
+              "name": "Scheduled Transaction",
+              "description": "Transazione Programmata"
+            }
+          ],
+          "date": "Oct 11, 2021, 12:00:00 AM",
+          "movements": [
+            {
+              "ID": 794441857,
+              "description": "Iphone Nuovo Numero: 6",
+              "amount": 59.999,
+              "type": "DEBIT"
+            }
+          ]
+        },
+        {
+          "ID": -432245349,
+          "tags": [
+            {
+              "ID": 2087281550,
+              "name": "Scheduled Transaction",
+              "description": "Transazione Programmata"
+            }
+          ],
+          "date": "Apr 9, 2022, 12:00:00 AM",
+          "movements": [
+            {
+              "ID": 794441858,
+              "description": "Iphone Nuovo Numero: 7",
+              "amount": 59.999,
+              "type": "DEBIT"
+            }
+          ]
+        },
+        {
+          "ID": 558563030,
+          "tags": [
+            {
+              "ID": 2087281550,
+              "name": "Scheduled Transaction",
+              "description": "Transazione Programmata"
+            }
+          ],
+          "date": "Nov 5, 2022, 12:00:00 AM",
+          "movements": [
+            {
+              "ID": 794441859,
+              "description": "Iphone Nuovo Numero: 8",
+              "amount": 59.999,
+              "type": "DEBIT"
+            }
+          ]
+        },
+        {
+          "ID": 682295014,
+          "tags": [
+            {
+              "ID": 2087281550,
+              "name": "Scheduled Transaction",
+              "description": "Transazione Programmata"
+            }
+          ],
+          "date": "Jul 3, 2023, 12:00:00 AM",
+          "movements": [
+            {
+              "ID": 794441860,
+              "description": "Iphone Nuovo Numero: 9",
+              "amount": 59.999,
+              "type": "DEBIT"
+            }
+          ]
+        },
+        {
+          "ID": -2116582822,
+          "tags": [
+            {
+              "ID": 2087281550,
+              "name": "Scheduled Transaction",
+              "description": "Transazione Programmata"
+            }
+          ],
+          "date": "Mar 29, 2024, 12:00:00 AM",
+          "movements": [
+            {
+              "ID": 1205235810,
+              "description": "Iphone Nuovo Numero: 10",
+              "amount": 59.999,
+              "type": "DEBIT"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ID": -469146170,
+      "description": "Abbonamento Netflix",
+      "accountID": 839305604,
+      "transactions": [
+        {
+          "ID": 1695807281,
+          "tags": [
+            {
+              "ID": 2087281550,
+              "name": "Scheduled Transaction",
+              "description": "Transazione Programmata"
+            }
+          ],
+          "date": "Aug 1, 2020, 12:00:00 AM",
+          "movements": [
+            {
+              "ID": -1005567353,
+              "description": "Abbonamento Netflix Numero: 1",
+              "amount": 10.0,
+              "type": "DEBIT"
+            }
+          ]
+        },
+        {
+          "ID": 1720155994,
+          "tags": [
+            {
+              "ID": 2087281550,
+              "name": "Scheduled Transaction",
+              "description": "Transazione Programmata"
+            }
+          ],
+          "date": "Aug 31, 2020, 12:00:00 AM",
+          "movements": [
+            {
+              "ID": -1005567352,
+              "description": "Abbonamento Netflix Numero: 2",
+              "amount": 10.0,
+              "type": "DEBIT"
+            }
+          ]
+        },
+        {
+          "ID": -940724630,
+          "tags": [
+            {
+              "ID": 2087281550,
+              "name": "Scheduled Transaction",
+              "description": "Transazione Programmata"
+            }
+          ],
+          "date": "Oct 30, 2020, 12:00:00 AM",
+          "movements": [
+            {
+              "ID": -1005567351,
+              "description": "Abbonamento Netflix Numero: 3",
+              "amount": 10.0,
+              "type": "DEBIT"
+            }
+          ]
+        },
+        {
+          "ID": -1434112359,
+          "tags": [
+            {
+              "ID": 2087281550,
+              "name": "Scheduled Transaction",
+              "description": "Transazione Programmata"
+            }
+          ],
+          "date": "Jan 28, 2021, 12:00:00 AM",
+          "movements": [
+            {
+              "ID": -1005567350,
+              "description": "Abbonamento Netflix Numero: 4",
+              "amount": 10.0,
+              "type": "DEBIT"
+            }
+          ]
+        },
+        {
+          "ID": -72670602,
+          "tags": [
+            {
+              "ID": 2087281550,
+              "name": "Scheduled Transaction",
+              "description": "Transazione Programmata"
+            }
+          ],
+          "date": "May 28, 2021, 12:00:00 AM",
+          "movements": [
+            {
+              "ID": -1005567349,
+              "description": "Abbonamento Netflix Numero: 5",
+              "amount": 10.0,
+              "type": "DEBIT"
+            }
+          ]
+        },
+        {
+          "ID": 1065539075,
+          "tags": [
+            {
+              "ID": 2087281550,
+              "name": "Scheduled Transaction",
+              "description": "Transazione Programmata"
+            }
+          ],
+          "date": "Oct 25, 2021, 12:00:00 AM",
+          "movements": [
+            {
+              "ID": -1005567348,
+              "description": "Abbonamento Netflix Numero: 6",
+              "amount": 10.0,
+              "type": "DEBIT"
+            }
+          ]
+        },
+        {
+          "ID": -1851565469,
+          "tags": [
+            {
+              "ID": 2087281550,
+              "name": "Scheduled Transaction",
+              "description": "Transazione Programmata"
+            }
+          ],
+          "date": "Apr 23, 2022, 12:00:00 AM",
+          "movements": [
+            {
+              "ID": -1005567347,
+              "description": "Abbonamento Netflix Numero: 7",
+              "amount": 10.0,
+              "type": "DEBIT"
+            }
+          ]
+        },
+        {
+          "ID": 1066818617,
+          "tags": [
+            {
+              "ID": 2087281550,
+              "name": "Scheduled Transaction",
+              "description": "Transazione Programmata"
+            }
+          ],
+          "date": "Nov 19, 2022, 12:00:00 AM",
+          "movements": [
+            {
+              "ID": -1005567346,
+              "description": "Abbonamento Netflix Numero: 8",
+              "amount": 10.0,
+              "type": "DEBIT"
+            }
+          ]
+        },
+        {
+          "ID": -741650973,
+          "tags": [
+            {
+              "ID": 2087281550,
+              "name": "Scheduled Transaction",
+              "description": "Transazione Programmata"
+            }
+          ],
+          "date": "Jul 17, 2023, 12:00:00 AM",
+          "movements": [
+            {
+              "ID": -1005567345,
+              "description": "Abbonamento Netflix Numero: 9",
+              "amount": 10.0,
+              "type": "DEBIT"
+            }
+          ]
+        },
+        {
+          "ID": 197114108,
+          "tags": [
+            {
+              "ID": 2087281550,
+              "name": "Scheduled Transaction",
+              "description": "Transazione Programmata"
+            }
+          ],
+          "date": "Apr 12, 2024, 12:00:00 AM",
+          "movements": [
+            {
+              "ID": 1239526773,
+              "description": "Abbonamento Netflix Numero: 10",
+              "amount": 10.0,
+              "type": "DEBIT"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

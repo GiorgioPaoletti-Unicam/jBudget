@@ -1,0 +1,90 @@
+it/unicam/cs/pa/jbudget105056/model/Budget.java
+ it.unicam.cs.pa.jbudget105056.model.Budget
+it/unicam/cs/pa/jbudget105056/model/BudgetReport.java
+ it.unicam.cs.pa.jbudget105056.model.BudgetReport
+it/unicam/cs/pa/jbudget105056/model/TagImplementation.java
+ it.unicam.cs.pa.jbudget105056.model.TagImplementation
+it/unicam/cs/pa/jbudget105056/model/BudgetImplementation.java
+ it.unicam.cs.pa.jbudget105056.model.BudgetImplementation
+it/unicam/cs/pa/jbudget105056/model/BudgetReportImplementation.java
+ it.unicam.cs.pa.jbudget105056.model.BudgetReportImplementation
+it/unicam/cs/pa/jbudget105056/model/ClassRegistry.java
+ it.unicam.cs.pa.jbudget105056.model.ClassRegistry
+it/unicam/cs/pa/jbudget105056/model/ScheduledTransaction.java
+ it.unicam.cs.pa.jbudget105056.model.ScheduledTransaction
+it/unicam/cs/pa/jbudget105056/model/MovementType.java
+ it.unicam.cs.pa.jbudget105056.model.MovementType
+it/unicam/cs/pa/jbudget105056/model/Transaction.java
+ it.unicam.cs.pa.jbudget105056.model.Transaction
+it/unicam/cs/pa/jbudget105056/model/BudgetManagerImplementation.java
+ it.unicam.cs.pa.jbudget105056.model.BudgetManagerImplementation
+it/unicam/cs/pa/jbudget105056/controller/LoggerManager.java
+ it.unicam.cs.pa.jbudget105056.controller.LoggerManager
+it/unicam/cs/pa/jbudget105056/model/Tag.java
+ it.unicam.cs.pa.jbudget105056.model.Tag
+it/unicam/cs/pa/jbudget105056/controller/BudgetTypeAdapter.java
+ it.unicam.cs.pa.jbudget105056.controller.BudgetTypeAdapter
+it/unicam/cs/pa/jbudget105056/controller/Saver.java
+ it.unicam.cs.pa.jbudget105056.controller.Saver
+it/unicam/cs/pa/jbudget105056/controller/TagDeserializer.java
+ it.unicam.cs.pa.jbudget105056.controller.TagDeserializer
+it/unicam/cs/pa/jbudget105056/model/BudgetManager.java
+ it.unicam.cs.pa.jbudget105056.model.BudgetManager
+it/unicam/cs/pa/jbudget105056/model/TransactionImplementation.java
+ it.unicam.cs.pa.jbudget105056.model.TransactionImplementation
+it/unicam/cs/pa/jbudget105056/controller/Loader.java
+ it.unicam.cs.pa.jbudget105056.controller.Loader
+it/unicam/cs/pa/jbudget105056/model/MovementImplementation.java
+ it.unicam.cs.pa.jbudget105056.model.MovementImplementation
+it/unicam/cs/pa/jbudget105056/controller/Controller.java
+ it.unicam.cs.pa.jbudget105056.controller.Controller
+it/unicam/cs/pa/jbudget105056/model/AccountType.java
+ it.unicam.cs.pa.jbudget105056.model.AccountType
+it/unicam/cs/pa/jbudget105056/model/Movement.java
+ it.unicam.cs.pa.jbudget105056.model.Movement
+it/unicam/cs/pa/jbudget105056/model/Ledger.java
+ it.unicam.cs.pa.jbudget105056.model.Ledger
+it/unicam/cs/pa/jbudget105056/model/Account.java
+ it.unicam.cs.pa.jbudget105056.model.Account
+it/unicam/cs/pa/jbudget105056/controller/SaverGSon.java
+ it.unicam.cs.pa.jbudget105056.controller.SaverGSon
+it/unicam/cs/pa/jbudget105056/controller/LoaderGSon.java
+ it.unicam.cs.pa.jbudget105056.controller.LoaderGSon
+it/unicam/cs/pa/jbudget105056/controller/MovementTypeAdapter.java
+ it.unicam.cs.pa.jbudget105056.controller.MovementTypeAdapter
+it/unicam/cs/pa/jbudget105056/controller/LoggerManagerImplementation.java
+ it.unicam.cs.pa.jbudget105056.controller.LoggerManagerImplementation
+it/unicam/cs/pa/jbudget105056/model/ClassRegistryImplementation.java
+ it.unicam.cs.pa.jbudget105056.model.ClassRegistryImplementation
+ it.unicam.cs.pa.jbudget105056.model.ClassRegistryImplementation$ObjectWithGetId
+it/unicam/cs/pa/jbudget105056/controller/TransactionDeserializer.java
+ it.unicam.cs.pa.jbudget105056.controller.TransactionDeserializer
+ it.unicam.cs.pa.jbudget105056.controller.TransactionDeserializer$1
+ it.unicam.cs.pa.jbudget105056.controller.TransactionDeserializer$2
+it/unicam/cs/pa/jbudget105056/controller/AccountDeserializer.java
+ it.unicam.cs.pa.jbudget105056.controller.AccountDeserializer
+ it.unicam.cs.pa.jbudget105056.controller.AccountDeserializer$1
+it/unicam/cs/pa/jbudget105056/controller/ControllerImplementationModule.java
+ it.unicam.cs.pa.jbudget105056.controller.BudgetInject
+ it.unicam.cs.pa.jbudget105056.controller.ControllerImplementationModule
+ it.unicam.cs.pa.jbudget105056.controller.LedgerInject
+ it.unicam.cs.pa.jbudget105056.controller.LoaderInject
+ it.unicam.cs.pa.jbudget105056.controller.LoggerManagerInject
+ it.unicam.cs.pa.jbudget105056.controller.SaverInject
+it/unicam/cs/pa/jbudget105056/model/ScheduledTransactionImplementation.java
+ it.unicam.cs.pa.jbudget105056.model.ScheduledTransactionImplementation
+it/unicam/cs/pa/jbudget105056/controller/ScheduledTransactionTypeAdapter.java
+ it.unicam.cs.pa.jbudget105056.controller.ScheduledTransactionTypeAdapter
+ it.unicam.cs.pa.jbudget105056.controller.ScheduledTransactionTypeAdapter$1
+ it.unicam.cs.pa.jbudget105056.controller.ScheduledTransactionTypeAdapter$2
+it/unicam/cs/pa/jbudget105056/model/AccountImplementation.java
+ it.unicam.cs.pa.jbudget105056.model.AccountImplementation
+it/unicam/cs/pa/jbudget105056/controller/ControllerImplementation.java
+ it.unicam.cs.pa.jbudget105056.controller.ControllerImplementation
+it/unicam/cs/pa/jbudget105056/model/LedgerImplementation.java
+ it.unicam.cs.pa.jbudget105056.model.LedgerImplementation
+it/unicam/cs/pa/jbudget105056/view/JavaFxViewController.java
+ it.unicam.cs.pa.jbudget105056.view.JavaFxViewController
+ it.unicam.cs.pa.jbudget105056.view.JavaFxViewController$1
+ it.unicam.cs.pa.jbudget105056.view.JavaFxViewController$2
+ it.unicam.cs.pa.jbudget105056.view.JavaFxViewController$3

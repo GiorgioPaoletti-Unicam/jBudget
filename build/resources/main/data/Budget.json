@@ -1,0 +1,26 @@
+[
+  {
+    "ID": 1232768792,
+    "name": "Vestiario",
+    "description": "Shopping",
+    "value": 250.0
+  },
+  {
+    "ID": 1521131158,
+    "name": "Macchina",
+    "description": "Spese Macchina",
+    "value": 5000.0
+  },
+  {
+    "ID": 589400924,
+    "name": "Regalo",
+    "description": "Ragalo",
+    "value": 0.0
+  },
+  {
+    "ID": 761085632,
+    "name": "Fast-food",
+    "description": "Ristorazione",
+    "value": 70.0
+  }
+]
