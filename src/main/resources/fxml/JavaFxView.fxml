@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import org.controlsfx.control.CheckComboBox?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="it.unicam.cs.pa.jbudget105056.view.JavaFxViewController">
+   <bottom>
+             <Label fx:id="MessaggioErrore" alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" textFill="RED" BorderPane.alignment="CENTER" />
+   </bottom>
+   <center>
+       <TabPane BorderPane.alignment="CENTER">
+           <Tab closable="false" text="TRANSAZIONI">
+               <BorderPane prefHeight="200.0" prefWidth="200.0">
+               <center>
+                  <TableView fx:id="TransactionTableView" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+               </center>
+               <left>
+                   <VBox BorderPane.alignment="CENTER">
+                       <Button fx:id="AddTransactionButton" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onMouseClicked="#EnableAddTrasactionTabPane" prefHeight="77.0" prefWidth="55.0" text="ADD" />
+                       <Button fx:id="DeleteTransactionButton" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onMouseClicked="#DeleteTransaction" prefHeight="77.0" prefWidth="55.0" text="DELETE" />
+                   </VBox>
+               </left>
+               <bottom>
+                  <BorderPane fx:id="AddTransactionPane" disable="true" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                     <top>
+                         <HBox BorderPane.alignment="CENTER">
+                             <Button fx:id="EntrataButton" mnemonicParsing="false" onMouseClicked="#SelectEntrataArgument" prefHeight="45.0" prefWidth="200.0" text="ENTRATA" />
+                             <Button fx:id="UscitaButton" mnemonicParsing="false" onMouseClicked="#SelectSpesaArgument" prefHeight="45.0" prefWidth="200.0" text="USCITA" />
+                             <Button fx:id="TrasferimentoButton" mnemonicParsing="false" onMouseClicked="#SelectTrasferimentoArgument" prefHeight="45.0" prefWidth="200.0" text="TRASFERIMENTO" />
+                         </HBox>
+                     </top>
+                     <center>
+                               <GridPane BorderPane.alignment="CENTER">
+                                   <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="299.0" minWidth="10.0" prefWidth="30.0" />
+                                       <ColumnConstraints hgrow="SOMETIMES" maxWidth="348.0" minWidth="10.0" prefWidth="242.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="254.0" minWidth="0.0" prefWidth="32.0" />
+                                       <ColumnConstraints hgrow="SOMETIMES" maxWidth="401.0" minWidth="10.0" prefWidth="264.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="400.0" minWidth="10.0" prefWidth="33.0" />
+                                   </columnConstraints>
+                                   <rowConstraints>
+                                       <RowConstraints prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                       <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                       <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="25.0" vgrow="SOMETIMES" />
+                                   </rowConstraints>
+                                   <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                       <Label fx:id="AlContoLabel" alignment="TOP_LEFT" prefHeight="17.0" prefWidth="77.0" text="Conto:" />
+                                       <ChoiceBox fx:id="AlContoChoiceBox" prefHeight="25.0" prefWidth="167.0" />
+                                   </HBox>
+                                   <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                                       <Label prefWidth="118.0" text="Amount:" />
+                                       <Spinner fx:id="TransactionAmountSpinner" editable="true" />
+                                   </HBox>
+                                   <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                                       <Label prefHeight="17.0" prefWidth="87.0" text="Data:" />
+                                       <DatePicker fx:id="TransactionDataPicker" />
+                                   </HBox>
+                                   <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                                       <Label prefHeight="17.0" prefWidth="79.0" text="Ora:" />
+                                       <Spinner fx:id="TransactionOraSpinner" editable="true" prefHeight="25.0" prefWidth="55.0" />
+                                       <Spinner fx:id="TransactionMinutiSpinner" editable="true" prefHeight="25.0" prefWidth="55.0" />
+                                       <Spinner fx:id="TransactionSecondiSpinner" editable="true" prefHeight="25.0" prefWidth="55.0" />
+                                   </HBox>
+                                   <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="2">
+                                       <Label prefHeight="17.0" prefWidth="119.0" text="Descrizione:" />
+                                       <TextField fx:id="TransactionDescrizione" />
+                                   </HBox>
+                                   <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="3">
+                                       <Label prefHeight="17.0" prefWidth="118.0" text="Categorie:" />
+                                       <CheckComboBox fx:id="TransactionCategoriaCheckComboBox" prefHeight="25.0" prefWidth="148.0" />
+                                   </HBox>
+                                   <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                                       <Button fx:id="TransactionCancelButton" mnemonicParsing="false" onMouseClicked="#DisableAddTransactionTabPane" prefHeight="25.0" prefWidth="120.0" text="CANCEL" />
+                                   </HBox>
+                                   <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="4">
+                                       <Label prefHeight="17.0" prefWidth="145.0" />
+                                       <Button fx:id="TransactionOkButton" mnemonicParsing="false" onMouseClicked="#AddTransaction" prefHeight="25.0" prefWidth="120.0" text="OK" />
+                                   </HBox>
+                                   <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1">
+                                       <Label fx:id="DalContoLabel" alignment="TOP_LEFT" prefHeight="17.0" prefWidth="77.0" text="Dal Conto:" visible="false" />
+                                       <ChoiceBox fx:id="DalContoChoiceBox" prefHeight="25.0" prefWidth="167.0" visible="false" />
+                                   </HBox>
+                                   <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="3">
+                                       <Label fx:id="CommissioneLabel" prefWidth="118.0" text="Commissione:" visible="false" />
+                                       <Spinner fx:id="TransactionCommissioneSpinner" editable="true" visible="false" />
+                                   </HBox>
+                               </GridPane>
+                     </center>
+                  </BorderPane>
+               </bottom>
+               </BorderPane>
+           </Tab>
+           <Tab closable="false" text="CONTI">
+               <BorderPane>
+                   <bottom>
+                       <GridPane fx:id="AddAccountPane" disable="true" BorderPane.alignment="CENTER">
+                           <columnConstraints>
+                               <ColumnConstraints hgrow="SOMETIMES" maxWidth="145.0" minWidth="0.0" prefWidth="10.0" />
+                               <ColumnConstraints hgrow="SOMETIMES" maxWidth="334.0" minWidth="10.0" prefWidth="230.0" />
+                               <ColumnConstraints hgrow="SOMETIMES" maxWidth="334.0" minWidth="10.0" prefWidth="10.0" />
+                               <ColumnConstraints hgrow="SOMETIMES" maxWidth="261.0" minWidth="10.0" prefWidth="230.0" />
+                               <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="10.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                               <RowConstraints prefHeight="30.0" vgrow="SOMETIMES" />
+                               <RowConstraints prefHeight="30.0" vgrow="SOMETIMES" />
+                               <RowConstraints prefHeight="30.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                           <HBox GridPane.columnIndex="1">
+                               <Label contentDisplay="CENTER" prefHeight="25.0" prefWidth="150.0" text="Nome:" />
+                               <TextField fx:id="NameAccountTextField" />
+                           </HBox>
+                           <HBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" GridPane.columnIndex="3">
+                               <Label alignment="TOP_LEFT" contentDisplay="CENTER" prefHeight="25.0" prefWidth="150.0" text="Descrizione:" />
+                               <TextField fx:id="DescriptionAccountTextField" />
+                           </HBox>
+                           <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                               <Label contentDisplay="CENTER" prefHeight="25.0" prefWidth="150.0" text="Opening:" />
+                               <Spinner fx:id="OpeningAccountSpinner" editable="true" />
+                           </HBox>
+                           <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                               <Label contentDisplay="CENTER" prefHeight="25.0" prefWidth="150.0" text="Tipo:" />
+                               <ChoiceBox fx:id="AccountTypeChoiceBox" prefWidth="150.0" />
+                           </HBox>
+                           <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="2">
+                               <Label prefHeight="37.0" prefWidth="182.0" />
+                               <Button fx:id="OkAccountButton" mnemonicParsing="false" onMouseClicked="#AddAccount" prefHeight="25.0" prefWidth="120.0" text="OK" />
+                           </HBox>
+                           <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                               <Button fx:id="CancelAccountButton" mnemonicParsing="false" onMouseClicked="#DisableAddAccountPane" prefHeight="25.0" prefWidth="120.0" text="CANCEL" />
+                           </HBox>
+                       </GridPane>
+                   </bottom>
+               <left>
+                   <VBox BorderPane.alignment="CENTER">
+                       <Button fx:id="AddAccountButton" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onMouseClicked="#EnableAddAccountPane" prefHeight="132.0" prefWidth="55.0" text="ADD" />
+                       <Button fx:id="DeleteAccountButton" layoutX="10.0" layoutY="142.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onMouseClicked="#DeleteSelectedAccountOnTableView" prefHeight="132.0" prefWidth="55.0" text="DELETE" />
+                   </VBox>
+               </left>
+               <center>
+                  <TableView fx:id="AccountTableView" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+               </center>
+               </BorderPane>
+           </Tab>
+           <Tab closable="false" text="CATEGORIE">
+               <BorderPane prefHeight="200.0" prefWidth="200.0">
+               <center>
+                  <TableView fx:id="TagTableView" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+               </center>
+               <bottom>
+                   <GridPane fx:id="AddTagPane" disable="true" BorderPane.alignment="CENTER">
+                       <columnConstraints>
+                           <ColumnConstraints hgrow="SOMETIMES" maxWidth="78.0" minWidth="10.0" prefWidth="24.0" />
+                           <ColumnConstraints hgrow="SOMETIMES" maxWidth="291.0" minWidth="10.0" prefWidth="285.0" />
+                           <ColumnConstraints hgrow="SOMETIMES" maxWidth="267.0" minWidth="10.0" prefWidth="262.0" />
+                           <ColumnConstraints hgrow="SOMETIMES" maxWidth="133.0" minWidth="9.0" prefWidth="23.0" />
+                       </columnConstraints>
+                       <rowConstraints>
+                           <RowConstraints maxHeight="49.0" minHeight="10.0" prefHeight="41.0" vgrow="SOMETIMES" />
+                           <RowConstraints maxHeight="45.0" minHeight="10.0" prefHeight="28.0" vgrow="SOMETIMES" />
+                       </rowConstraints>
+                       <HBox prefHeight="33.0" prefWidth="287.0" GridPane.columnIndex="1">
+                           <Label alignment="TOP_LEFT" prefHeight="26.0" prefWidth="107.0" text="Nome:" />
+                           <TextField fx:id="NameTagTextField" />
+                       </HBox>
+                       <HBox prefHeight="24.0" prefWidth="263.0" GridPane.columnIndex="2">
+                           <Label alignment="TOP_LEFT" prefHeight="26.0" prefWidth="111.0" text="Descrizione:" />
+                           <TextField fx:id="DescrizioneTagTextField" />
+                       </HBox>
+                       <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <Button fx:id="CancelTagButon" mnemonicParsing="false" onMouseClicked="#DisableAddTagPane" prefHeight="25.0" prefWidth="120.0" text="CANCEL" />
+                       </HBox>
+                       <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                           <Label prefHeight="29.0" prefWidth="184.0" />
+                           <Button fx:id="OkTagButon" mnemonicParsing="false" onMouseClicked="#AddTag" prefHeight="25.0" prefWidth="120.0" text="OK" />
+                       </HBox>
+                   </GridPane>
+               </bottom>
+               <left>
+                   <VBox BorderPane.alignment="CENTER">
+                       <Button fx:id="AddTagButton" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onMouseClicked="#EnableAddTagPane" prefHeight="147.0" prefWidth="55.0" text="ADD" />
+                       <Button fx:id="DeleteTagButton" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onMouseClicked="#DeleteTag" prefHeight="142.0" prefWidth="55.0" text="DELETE" />
+                   </VBox>
+               </left>
+               </BorderPane>
+           </Tab>
+           <Tab closable="false" text="TRANS. PROGRAMMATE">
+               <BorderPane prefHeight="200.0" prefWidth="200.0">
+                   <center>
+                       <TableView fx:id="ScheduledTransactionTableView" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+                   </center>
+                   <bottom>
+                       <GridPane fx:id="AddScheduledTransactionAddPane" disable="true" BorderPane.alignment="CENTER">
+                           <columnConstraints>
+                               <ColumnConstraints hgrow="SOMETIMES" maxWidth="195.0" minWidth="0.0" prefWidth="29.0" />
+                               <ColumnConstraints hgrow="SOMETIMES" maxWidth="450.0" minWidth="10.0" prefWidth="249.0" />
+                               <ColumnConstraints hgrow="SOMETIMES" maxWidth="450.0" minWidth="1.0" prefWidth="32.0" />
+                               <ColumnConstraints hgrow="SOMETIMES" maxWidth="478.0" minWidth="10.0" prefWidth="263.0" />
+                               <ColumnConstraints hgrow="SOMETIMES" maxWidth="385.0" minWidth="10.0" prefWidth="30.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                               <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                               <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                               <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                               <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                           <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1">
+                               <Label prefHeight="17.0" prefWidth="98.0" text="Descrizione:" />
+                               <TextField fx:id="ScheduleDescrizione" />
+                           </HBox>
+                           <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="3">
+                               <Label prefHeight="17.0" prefWidth="119.0" text="Conto:" />
+                               <ChoiceBox fx:id="ScheduleAccountChoiceBox" prefHeight="25.0" prefWidth="148.0" />
+                           </HBox>
+                           <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                               <Label prefHeight="17.0" prefWidth="122.0" text="Prima Data:" />
+                               <DatePicker fx:id="ScheduleFirstDate" />
+                           </HBox>
+                           <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                               <Label prefHeight="17.0" prefWidth="121.0" text="Numero Transazioni" />
+                               <Spinner fx:id="ScheduleNumeroTransaction" editable="true" />
+                           </HBox>
+                           <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                               <Button fx:id="ScheduleCancelButton" mnemonicParsing="false" onMouseClicked="#DisableScheduleAddPane" prefHeight="25.0" prefWidth="120.0" text="CANCEL" />
+                           </HBox>
+                           <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="3">
+                               <Label prefHeight="17.0" prefWidth="181.0" />
+                               <Button fx:id="ScheduleOkButton" mnemonicParsing="false" onMouseClicked="#AddScheduleTransaction" prefHeight="25.0" prefWidth="120.0" text="OK" />
+                           </HBox>
+                           <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                               <Label prefHeight="17.0" prefWidth="99.0" text="Valore Totale:" />
+                               <Spinner fx:id="ScheduleValoreTotale" editable="true" />
+                           </HBox>
+                           <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="2">
+                               <Label prefHeight="17.0" prefWidth="123.0" text="Interavallo Giorni:" />
+                               <Spinner fx:id="ScheduleIntervalloGiorni" editable="true" />
+                           </HBox>
+                       </GridPane>
+                   </bottom>
+                   <left>
+                       <VBox BorderPane.alignment="CENTER">
+                           <Button fx:id="EnableScheduleTransactionAddPaneButton" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onMouseClicked="#EnableScheduleAddPane" prefHeight="132.0" prefWidth="55.0" text="ADD" />
+                           <Button fx:id="DeleteScheduledTransactionButton" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onMouseClicked="#DeleteScheduleTransaction" prefHeight="132.0" prefWidth="55.0" text="DELETE" />
+                       </VBox>
+                   </left>
+               </BorderPane>
+           </Tab>
+           <Tab closable="false" text="BUDGET">
+               <BorderPane prefHeight="200.0" prefWidth="200.0">
+                   <left>
+                       <VBox BorderPane.alignment="CENTER">
+                           <Button fx:id="EnableAddBudgetPaneButton" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onMouseClicked="#EnableAddBudgetPane" prefHeight="132.0" prefWidth="55.0" text="ADD" />
+                           <Button fx:id="DeleteBudgetButton" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onMouseClicked="#DeleteBudget" prefHeight="132.0" prefWidth="55.0" text="DELETE" />
+                       </VBox>
+                   </left>
+                   <bottom>
+                       <GridPane fx:id="AddBudgetPane" disable="true" BorderPane.alignment="CENTER">
+                           <columnConstraints>
+                               <ColumnConstraints hgrow="SOMETIMES" maxWidth="144.0" minWidth="0.0" prefWidth="26.0" />
+                               <ColumnConstraints hgrow="SOMETIMES" maxWidth="300.0" minWidth="10.0" prefWidth="256.0" />
+                               <ColumnConstraints hgrow="SOMETIMES" maxWidth="300.0" minWidth="10.0" prefWidth="35.0" />
+                               <ColumnConstraints hgrow="SOMETIMES" maxWidth="328.0" minWidth="10.0" prefWidth="255.0" />
+                               <ColumnConstraints hgrow="SOMETIMES" maxWidth="125.0" minWidth="10.0" prefWidth="31.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                               <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                               <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                               <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                           <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                               <Label prefHeight="17.0" prefWidth="106.0" text="Categoria:" />
+                               <ChoiceBox fx:id="CategoriaChoiceBox" prefHeight="25.0" prefWidth="159.0" />
+                           </HBox>
+                           <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                               <Label prefHeight="17.0" prefWidth="107.0" text="Expected:" />
+                               <Spinner fx:id="ValueBudgetSpinner" editable="true" />
+                           </HBox>
+                           <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                               <Button fx:id="DisableAddBudgetPaneButton" mnemonicParsing="false" onMouseClicked="#DisableAddBudgetPane" prefWidth="120.0" text="CANCEL" />
+                           </HBox>
+                           <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="2">
+                               <Label prefHeight="17.0" prefWidth="139.0" />
+                               <Button fx:id="AddBudgetButton" mnemonicParsing="false" onMouseClicked="#AddBudget" prefWidth="120.0" text="OK" />
+                           </HBox>
+                       </GridPane>
+                   </bottom>
+                   <center>
+                       <TableView fx:id="BudgetTableView" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+                   </center>
+               </BorderPane>
+           </Tab>
+           <Tab closable="false" text="REPORT">
+               <TableView fx:id="ReportTableView" prefHeight="200.0" prefWidth="200.0" />
+           </Tab>
+       </TabPane>
+   </center>
+</BorderPane>
